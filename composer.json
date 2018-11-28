@@ -1,0 +1,16 @@
+{
+    "name": "leocavalcante/siler-swoole-loader",
+    "description": "Siler + Swoole project to be tested on Loader.io",
+    "type": "project",
+    "require": {
+        "leocavalcante/siler": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leocavalcante",
+            "email": "lc@leocavalcante.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
