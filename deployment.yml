@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: siler-swoole-loader
+
+spec:
+  selector:
+    matchLabels:
+      app: siler-swoole-loader
+  template:
+    metadata:
+      labels:
+        app: siler-swoole-loader
+    spec:
+      containers:
+      - name: swiler-swooler-loader
+        image: registry.gitlab.com/leocavalcante/siler-swoole-loader:latest
+        ports:
+        - containerPort: 9501
+
+      imagePullSecrets:
+        - name: gitlab-registry

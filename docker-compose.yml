@@ -1,10 +1,10 @@
 version: '3.6'
 
 services:
-    web:
-        container_name: siler_swoole_loader
-        build: .
-        ports:
-            - 9501:9501
-        volumes:
-            - ./:/app
+  web:
+    container_name: siler_swoole_loader
+    build: .
+    ports:
+      - 9501:9501
+    volumes:
+      - ./:/app
